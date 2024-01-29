@@ -178,4 +178,5 @@ solveKT(N) - Calls the solveKT function to find and print the Knight's Tour on a
 
 ## Output
 When ran this was the final ouput:
+[output](Screenshot 2024-01-29 162359.png)
 
