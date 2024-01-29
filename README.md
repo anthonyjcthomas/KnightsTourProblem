@@ -3,7 +3,8 @@ Give the problem statement:
 "A knight's tour is a sequence of moves by a knight on a chessboard such that the knight visits every square exactly once. If the knight ends on a square that is one knight's move from the beginning square (so that it forms a closed tour), the tour is called a "closed tour", otherwise, it's an "open tour". Given an N×N chessboard, your task is to write a program to find a knight's tour starting from a specific square." 
 I built this Recursive-Backtracking Algorithm. My approach to this was to try all possible paths the knight could take and check if the tour could be completed and print out the solution, otherwise, it backtracked and tried another move. 
 
-The first function I programmed was "isSafe" which tells the knight whether or not it can move to a square:
+## isSafe
+Tells the knight whether or not it can move to a square:
 
 
 
@@ -21,7 +22,8 @@ returns: true if the x,y coordinate is within the board boundaries and the knigh
 
 
 
-The second function I made was just a simple "printSolution" function.
+## printSolution
+simple print function.
 
 
 
@@ -43,7 +45,8 @@ prints out each cell of the board followed by a space
 
 
 
-The third function I made was the "solveKTUtil"  a recursive function where all the magic happens.
+## solveKTUtil 
+recursive function where all the magic happens.
 
 
 
@@ -109,7 +112,8 @@ board[next_x][next_y] = -1 - backtracks the square and tries the next move
 
 
 
-The fourth function "solveKT" is the the main function that initiates the Knight's Tour solution.
+## solveKT
+The main function that initiates the Knight's Tour solution.
 
 
 
@@ -165,14 +169,14 @@ If it returns True, the printSolution function is called to print the completed 
 
 
 
-And the final 2 lines of code are:
+## And the final 2 lines of code
 
 N = 8 - Sets the size of the chessboard.
 
 solveKT(N) - Calls the solveKT function to find and print the Knight's Tour on an 8x8 chessboard.
 
 
-
+## Output
 When ran this was the final ouput:
 
 0 59 38 33 30 17 8 63
