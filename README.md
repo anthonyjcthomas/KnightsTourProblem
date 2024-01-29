@@ -2,6 +2,7 @@
 Give the problem statement:
 "A knight's tour is a sequence of moves by a knight on a chessboard such that the knight visits every square exactly once. If the knight ends on a square that is one knight's move from the beginning square (so that it forms a closed tour), the tour is called a "closed tour", otherwise, it's an "open tour". Given an N×N chessboard, your task is to write a program to find a knight's tour starting from a specific square." 
 I built this Recursive-Backtracking Algorithm. My approach to this was to try all possible paths the knight could take and check if the tour could be completed and print out the solution, otherwise, it backtracked and tried another move. 
+
 The first function I programmed was "isSafe" which tells the knight whether or not it can move to a square:
 
 
